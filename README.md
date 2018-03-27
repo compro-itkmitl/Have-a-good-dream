@@ -1,4 +1,4 @@
-# Have a good dream.
+# Have a good dream
 
 ## Author
  - 60070073 : Passawit Riewthong
