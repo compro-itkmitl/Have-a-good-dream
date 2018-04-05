@@ -4,14 +4,14 @@
 
 void Line_Notify(String message) ;
 
+#define WIFI_SSID "<Your WiFi SSID>"
+#define WIFI_PASSWORD "<Your WiFi password>"
+#define FIREBASE_HOST "<Your firebase auth>"
+#define FIREBASE_KEY "<Your firebase key>"
+#define LINE_TOKEN "<Your line token>"
 #define RX D1
 #define TX D0
 #define MIC A0
-#define WIFI_SSID "Passawit"
-#define WIFI_PASSWORD "0914501330"
-#define FIREBASE_HOST "have-a-sweet-dream.firebaseio.com"
-#define FIREBASE_KEY "h4W53Y9c5GEOxeZ933hf9urhfRenw6t0EfpS1enf"
-#define LINE_TOKEN "HZ1dyJtIyzvfNWDkxULhknx8BbwVz9SrQIJKFl6UbW4"
 
 String message = "The baby needs you";
 int count_voice=0;
