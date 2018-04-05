@@ -17,7 +17,7 @@ This is a project for Computer Programming 2017.
    -  Set your wifi password to file `arduino/arduino.ino` in line `#define WIFI_PASSWORD "<Your WiFi password>"`.
 
  - [Firebase](https://firebase.google.com/)
-   -  Login to google account and create new project.
+   -  Login to Google account and create new project.
 ![firebase01](https://user-images.githubusercontent.com/32861458/38351598-60cf90a6-38da-11e8-826b-6fd611cd2d7b.png)
 
    - Go to `DEVELOP/Database/DATA` and copy firebase auth to file `arduino/arduino.ino` in line `#define FIREBASE_HOST "<Your firebase auth>"`.
@@ -33,11 +33,23 @@ SIGN-IN METHOD` then choose Facebook and fill in `App ID` and `App secret` from 
 ![firebase04](https://user-images.githubusercontent.com/32861458/38352418-52afb35e-38dd-11e8-8b4e-9c6ea800a0ad.png)
 
    - Go to `Project Overview/Add Firebase to your web app` then copy and paste the snippet at `firebase/public/index.html` in line `<!-- Copy and paste the snippet here. -->`.
-![screen shot 2561-04-05 at 14 39 03](https://user-images.githubusercontent.com/32861458/38352953-24bc43f2-38df-11e8-98ca-31484076de35.png)
-
- - [Line Notify](https://notify-bot.line.me/th/)
+![firebase05](https://user-images.githubusercontent.com/32861458/38352953-24bc43f2-38df-11e8-98ca-31484076de35.png)
 
  - [Facebook for Developers](https://developers.facebook.com)
+   - Login to Facebook account and create new app ID.
+![facebook01](https://user-images.githubusercontent.com/32861458/38354239-0c5d4398-38e3-11e8-88c7-646ecf5c940e.png)
+
+    - Go to `Settings/Basic` you will get App ID and App Secret to fill in firebase authentication.
+![facebook02](https://user-images.githubusercontent.com/32861458/38354316-65854060-38e3-11e8-915c-96f350847a5e.png)
+    - Go to `PRODUCTS/Facebook Login/Settings` and fill in your Valid OAuth Redirect URIs from firebase.
+![facebook03](https://user-images.githubusercontent.com/32861458/38354444-db339848-38e3-11e8-9af0-8f2b08e0a169.png)
+
+ - [Line Notify](https://notify-bot.line.me/th/)
+   - Login to Line account and create new token.
+![line01](https://user-images.githubusercontent.com/32861458/38353968-452dfb5a-38e2-11e8-93ec-d9061d69f2f1.png)
+
+    - Copy your token to file `arduino/arduino.ino` in line `define LINE_TOKEN "<Your line token>"`.
+![line02](https://user-images.githubusercontent.com/32861458/38354063-770f7f2c-38e2-11e8-82e6-539fbd0f8894.png)
 
 ## Author
  - 60070073 : Passawit Riewthong
