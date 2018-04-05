@@ -6,8 +6,8 @@ void Line_Notify(String message) ;
 
 #define WIFI_SSID "<Your WiFi SSID>"
 #define WIFI_PASSWORD "<Your WiFi password>"
-#define FIREBASE_HOST "<Your firebase auth>"
-#define FIREBASE_KEY "<Your firebase key>"
+#define FIREBASE_HOST "have-a-sweet-dream.firebaseio.com"
+#define FIREBASE_KEY "h4W53Y9c5GEOxeZ933hf9urhfRenw6t0EfpS1enf"
 #define LINE_TOKEN "<Your line token>"
 #define CRADLE_ID "<Your cradle's ID>"
 #define RX D1
