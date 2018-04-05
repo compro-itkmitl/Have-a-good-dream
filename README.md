@@ -13,19 +13,19 @@ This is a project for Computer Programming 2017.
 
 ## Setup
  - WiFi
-   - Set your wifi said to file `arduino/arduino.ino` in line `#define WIFI_SSID "<Your WiFi SSID>"`.
-   -  Set your wifi password to file `arduino/arduino.ino` in line `#define WIFI_PASSWORD "<Your WiFi password>"`.
+   - Set your wifi said to file `nodemcu/nodemcu.ino` in line `#define WIFI_SSID "<Your WiFi SSID>"`.
+   -  Set your wifi password to file `nodemcu/nodemcu.ino` in line `#define WIFI_PASSWORD "<Your WiFi password>"`.
 
  - [Firebase](https://firebase.google.com/)
    -  Login to Google account and create new project.
 ![firebase01](https://user-images.githubusercontent.com/32861458/38351598-60cf90a6-38da-11e8-826b-6fd611cd2d7b.png)
 
-   - Go to `DEVELOP/Database/DATA` and copy firebase auth to file `arduino/arduino.ino` in line `#define FIREBASE_HOST "<Your firebase auth>"`.
+   - Go to `DEVELOP/Database/DATA` and copy firebase auth to file `nodemcu/nodemcu.ino` in line `#define FIREBASE_HOST "<Your firebase auth>"`.
 ![firebase02](https://user-images.githubusercontent.com/32861458/38351977-fac9407a-38db-11e8-9dc8-c31858bbc0a3.png)
 
    - Go to `Project settings/SERVICE ACCOUNTS/  
 Database Secrets` and copy firebase   
-Database Secrets to file `arduino/arduino.ino` in line `#define FIREBASE_KEY "<Your firebase key>"`.
+Database Secrets to file `nodemcu/nodemcu.ino` in line `#define FIREBASE_KEY "<Your firebase key>"`.
 ![firebase03](https://user-images.githubusercontent.com/32861458/38352172-7e2b2596-38dc-11e8-963e-97f906156063.png)
 
    - Go to `DEVELOP/Authentication/  
@@ -48,8 +48,11 @@ SIGN-IN METHOD` then choose Facebook and fill in `App ID` and `App secret` from 
    - Login to Line account and create new token.
 ![line01](https://user-images.githubusercontent.com/32861458/38353968-452dfb5a-38e2-11e8-93ec-d9061d69f2f1.png)
 
-    - Copy your token to file `arduino/arduino.ino` in line `define LINE_TOKEN "<Your line token>"`.
+    - Copy your token to file `nodemcu/nodemcu.ino` in line `define LINE_TOKEN "<Your line token>"`.
 ![line02](https://user-images.githubusercontent.com/32861458/38354063-770f7f2c-38e2-11e8-82e6-539fbd0f8894.png)
+
+- Cradle's ID
+  - Setup your cradle's ID to file `nodemcu/nodemcu.ino` in line `#define CRADLE_ID "<Your cradle's ID>"`.
 
 ## Author
  - 60070073 : Passawit Riewthong

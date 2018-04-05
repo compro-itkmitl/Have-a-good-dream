@@ -9,6 +9,7 @@ void Line_Notify(String message) ;
 #define FIREBASE_HOST "<Your firebase auth>"
 #define FIREBASE_KEY "<Your firebase key>"
 #define LINE_TOKEN "<Your line token>"
+#define CRADLE_ID "<Your cradle's ID>"
 #define RX D1
 #define TX D0
 #define MIC A0
