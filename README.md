@@ -6,7 +6,7 @@ This is a project for Computer Programming 2017.
  - Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and install to your computer.
 
 ![install libreries](https://user-images.githubusercontent.com/32861458/38161239-52b132ba-34f5-11e8-9e4a-11852f7e81d0.png)
- - Download  [Firebase Arduino](https://github.com/firebase/firebase-arduino/archive/master.zip), [Metro Arduino Wiring](https://github.com/thomasfredericks/Metro-Arduino-Wiring/archive/master.zip), [ESP8266WiFi](http://arduino-esp8266.readthedocs.io/) and add library to Arduino IDE.
+ - Download  [Firebase Arduino](https://github.com/firebase/firebase-arduino/archive/master.zip), [ESP8266WiFi](http://arduino-esp8266.readthedocs.io/) and add library to Arduino IDE.
  
  - Download and Install [driver](https://www.silabs.com/products/development-tools/software/usb-%20to-uart-bridge-vcp-drivers).
 
