@@ -13,7 +13,7 @@ This is a project for Computer Programming 2017.
 
 ## Setup
  - WiFi
-   - Set your wifi said to file `nodemcu/nodemcu.ino` in line `#define WIFI_SSID "<Your WiFi SSID>"`.
+   - Set your wifi ssid to file `nodemcu/nodemcu.ino` in line `#define WIFI_SSID "<Your WiFi SSID>"`.
    -  Set your wifi password to file `nodemcu/nodemcu.ino` in line `#define WIFI_PASSWORD "<Your WiFi password>"`.
 
  - [Line Notify](https://notify-bot.line.me/th/)
@@ -29,7 +29,7 @@ This is a project for Computer Programming 2017.
 ## Author
  - 60070073 : Passawit Riewthong
  - 60070076 : Mareena Nuraman
- - 60070082 : Raksina
+ - 60070082 : Raksina Kanokwut
 
 
 ---
