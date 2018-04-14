@@ -28,7 +28,7 @@ This is a project for Computer Programming 2017.
  3. Login with Facebook
  4. Fill your cradle's ID
  5. Click the switch to control your cradle
- 6. When the baby is crying more than 5 minutes the cradle will notify you
+ 6. If the baby cries more than 5 minutes, the cradle will send you a message on your Line app.
 
 ## Author
  - 60070073 : Passawit Riewthong
