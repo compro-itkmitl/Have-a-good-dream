@@ -20,7 +20,7 @@ This is a project for Computer Programming 2017.
    - Login to Line account and create new token.
 ![line01](https://user-images.githubusercontent.com/32861458/38353968-452dfb5a-38e2-11e8-93ec-d9061d69f2f1.png)
 
-    - Copy your token to file `nodemcu/nodemcu.ino` in line `define LINE_TOKEN "<Your line token>"`.
+    - Copy your token to file `nodemcu/nodemcu.ino` in line `#define LINE_TOKEN "<Your line token>"`.
 ![line02](https://user-images.githubusercontent.com/32861458/38354063-770f7f2c-38e2-11e8-82e6-539fbd0f8894.png)
 
 - Cradle's ID
