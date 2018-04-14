@@ -42,13 +42,13 @@ function logout(){
 function OnOff() {
   if(document.getElementById("status").innerHTML=="OFF") {
     firebase.database().ref('pc/data').set(1);
-    firebase.database().ref('pc/cradle_id').set(parseInt(document.getElementById("cradle_id").value));
+    firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
     document.getElementById("status").innerHTML="ON";
   }
 
   else if(document.getElementById("status").innerHTML=="ON") {
     firebase.database().ref('pc/data').set(0);
-    firebase.database().ref('pc/cradle_id').set(parseInt(document.getElementById("cradle_id").value));
+    firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
     document.getElementById("status").innerHTML="OFF";
   }
 }
