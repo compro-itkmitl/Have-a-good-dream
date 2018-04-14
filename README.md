@@ -1,30 +1,34 @@
 
+
 # Have a good dream
 This is a project for Computer Programming 2017.
 
 ## Installation
- - Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and install to your computer.
-![download Arduino IDE](https://user-images.githubusercontent.com/32861458/38161222-19483d34-34f5-11e8-8b55-f9c01261893e.png)
+1.  Install  [Arduino](https://www.arduino.cc/en/Main/Software)
+2.  Install  [Arduino ESP8266 core](https://github.com/esp8266/Arduino#installing-with-boards-manager)
+3.  Download  [FirebaseArduino library](https://github.com/googlesamples/firebase-arduino/archive/master.zip)
+4. Download  [Metro library](https://github.com/thomasfredericks/Metro-Arduino-Wiring/archive/master.zip)
+5. Unzip `Metro-Arduino-Wiring-master.zip` and move `Metro-Arduino-Wiring-master/Metro` to Arduino libaries
+6.  Start Arduino
+7.  Click  `Sketch > Include Library > Add .ZIP Library...`
+8.  Choose  `firebase-arduino-master.zip` and downloaded in step  `3`
 
- - Download  [Firebase Arduino](https://github.com/firebase/firebase-arduino/archive/master.zip), [ESP8266WiFi](http://arduino-esp8266.readthedocs.io/), [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring/archive/master.zip) and add library to Arduino IDE.
-![install libreries](https://user-images.githubusercontent.com/32861458/38161239-52b132ba-34f5-11e8-9e4a-11852f7e81d0.png)
+## Configuration
+1.  Start Arduino
+2. Open `nodemcu/nodemcu.ino`
+3. In `nodemcu.ino` : Replace `WIFI_SSID` and `WIFI_PASSWORD` with WiFi credentials
+4. Go to [Line Notify](https://notify-bot.line.me/th/)
+5. Login with Line account and Generate new token
+6. In `nodemcu.ino` : Replace `LINE_TOKEN` with token in step `5`
+7. In `nodemcu.ino` : Replace `CRADLE_ID` with your cradle's ID
 
- - Download and Install [driver](https://www.silabs.com/products/development-tools/software/usb-%20to-uart-bridge-vcp-drivers).
-
-## Setup
- - WiFi
-   - Set your wifi ssid to file `nodemcu/nodemcu.ino` in line `#define WIFI_SSID "<Your WiFi SSID>"`.
-   -  Set your wifi password to file `nodemcu/nodemcu.ino` in line `#define WIFI_PASSWORD "<Your WiFi password>"`.
-
- - [Line Notify](https://notify-bot.line.me/th/)
-   - Login to Line account and create new token.
-![line01](https://user-images.githubusercontent.com/32861458/38353968-452dfb5a-38e2-11e8-93ec-d9061d69f2f1.png)
-
-    - Copy your token to file `nodemcu/nodemcu.ino` in line `#define LINE_TOKEN "<Your line token>"`.
-![line02](https://user-images.githubusercontent.com/32861458/38354063-770f7f2c-38e2-11e8-82e6-539fbd0f8894.png)
-
-- Cradle's ID
-  - Setup your cradle's ID to file `nodemcu/nodemcu.ino` in line `#define CRADLE_ID "<Your cradle's ID>"`.
+##  Used
+ 1. Open your cradle
+ 2. Go to [have-a-sweet-dream.firebaseapp.com](https://have-a-sweet-dream.firebaseapp.com)
+ 3. Login with Facebook
+ 4. Fill your cradle's ID
+ 5. Click the switch to control your cradle
+ 6. When the baby is crying more than 5 minutes the cradle will notify you
 
 ## Author
  - 60070073 : Passawit Riewthong
