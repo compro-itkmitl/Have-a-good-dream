@@ -11,7 +11,7 @@ This is a project for Computer Programming 2017.
 5. Unzip `Metro-Arduino-Wiring-master.zip` and move `Metro-Arduino-Wiring-master/Metro` to Arduino libaries
 6.  Start Arduino
 7.  Click  `Sketch > Include Library > Add .ZIP Library...`
-8.  Choose  `firebase-arduino-master.zip` and downloaded in step  `3`
+8.  Choose  `firebase-arduino-master.zip` downloaded in step  `3`
 
 ## Configuration
 1.  Start Arduino
