@@ -1,7 +1,10 @@
 
 
 # Have a good dream
-This is a project for Computer Programming 2017.
+   Caring for a newborn will be easier from now on. Getting up during the night, No time to comfort the crying baby, Need more time to do a house work, all of these will be solve by ‘ Have a good dream’,  a micro-controller project for Computer Programming 2017.
+
+	
+	  Nowadays some parents don’t have enough time to put a baby to sleep, some of them have to do a work together with lullaby their baby. Have a good dream will help you by swaying a cradle to soothe your baby, in some occasion that your baby awakes and cries for more than 5 minutes, the cradle will send you a message. We also make it easy for everyone to use this device such as a nurse, a babysitter, a teenager and an elder. Accordingly you can enjoy more sleep, get more time and delight in looking after a baby. 
 
 ## Installation
 1.  Install  [Arduino](https://www.arduino.cc/en/Main/Software)
