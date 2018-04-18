@@ -41,15 +41,15 @@ function logout(){
 
 var status = true;
 function OnOff() {
-  if(status) {
+  if(status == true) {
+    status = false;
     firebase.database().ref('pc/data').set(0);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = !status;
   }
 
-  else if(!status) {
+  else if(status == false) {
+    status = true;
     firebase.database().ref('pc/data').set(1);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = !status;
   }
 }
