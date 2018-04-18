@@ -139,6 +139,7 @@ input, button {
 switch-control {
   position: relative;
   display: inline-block;
+  font-family: 'Nunito', sans-serif;
   width: 4em;
   height: 1.5em;
   border-radius: 0.75em;
@@ -225,6 +226,10 @@ switch-control input:checked + state-indicator handle-button {
 .center {
   text-align: center;
   color: #1b2535;
+}
+
+.inline {
+  display: inline-block;
 }
 
 #control {
