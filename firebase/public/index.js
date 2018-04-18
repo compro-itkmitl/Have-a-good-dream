@@ -42,14 +42,16 @@ function logout(){
 var status = true;
 function OnOff() {
   if(status == true) {
-    status = false;
+    console.log("Off");
     firebase.database().ref('pc/data').set(0);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+    status = false;
   }
 
   else if(status == false) {
-    status = true;
+    console.log("On");
     firebase.database().ref('pc/data').set(1);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+    status = true;
   }
 }
