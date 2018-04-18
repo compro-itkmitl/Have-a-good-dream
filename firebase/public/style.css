@@ -149,6 +149,7 @@ switch-control {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  padding-bottom: 15px;
 }
 switch-control input {
   display: none;
