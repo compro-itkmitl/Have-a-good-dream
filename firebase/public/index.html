@@ -28,7 +28,18 @@
 				<div class="pd">
 					<switch-control>
 						<label>
-							<input onclick="OnOff()" type="checkbox" name="switch" checked>
+							<input type="checkbox" name="switch" id="io_switch" checked>
+							<state-indicator data-on="On" data-off="Off">
+								<handle-button></handle-button>
+							</state-indicator>
+						</label>
+					</switch-control>
+				</div>
+
+				<div class="pd">
+					<switch-control>
+						<label>
+							<input type="checkbox" name="switch" id="mic_switch" checked>
 							<state-indicator data-on="On" data-off="Off">
 								<handle-button></handle-button>
 							</state-indicator>

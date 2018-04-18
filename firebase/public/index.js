@@ -40,17 +40,29 @@ function logout(){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var checkbox = document.querySelector('input[type="checkbox"]');
+  var checkbox = document.querySelector('input[id="io_switch"]');
 
-  checkbox.addEventListener('change', function OnOff() {
+  checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
-      firebase.database().ref('pc/data').set(1);
+      firebase.database().ref('pc/io').set(1);
       firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-      console.log('Checked');
     } else {
-      firebase.database().ref('pc/data').set(0);
+      firebase.database().ref('pc/io').set(0);
       firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-      console.log('Not checked');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var checkbox = document.querySelector('input[id="mic_switch"]');
+
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      firebase.database().ref('pc/mic').set(1);
+      firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+    } else {
+      firebase.database().ref('pc/mic').set(0);
+      firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
     }
   });
 });
