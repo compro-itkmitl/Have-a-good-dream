@@ -39,19 +39,18 @@ function logout(){
   firebase.auth().signOut();
 }
 
-var status = true;
 function OnOff() {
-  if(status == true) {
-    console.log("Off");
-    firebase.database().ref('pc/data').set(0);
-    firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = false;
-  }
+  var checkbox = document.querySelector('input[type="checkbox"]');
 
-  else if(status == false) {
-    console.log("On");
-    firebase.database().ref('pc/data').set(1);
-    firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = true;
+  checkbox.addEventListener('change', function () {
+    if(checkbox.checked) {
+      firebase.database().ref('pc/data').set(0);
+      firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+    }
+
+    else {
+      firebase.database().ref('pc/data').set(1);
+      firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+    }
   }
 }
