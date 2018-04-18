@@ -1,44 +1,47 @@
 <html>
-	<head>
-		<title>Have a Good Dream</title>
-		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
+<head>
+	<title>Have a Good Dream</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-		<section id="banner">
-			<div class="inner">
-				<img id="logo" src="img/logo.png" alt="Have a Good Dream">
-				<h2>Have a Good Dream</h2>
-				<p>A comfortable way to take care your children </p>
+	<section id="banner">
+		<div class="inner">
+			<img id="logo" src="img/logo.png" alt="Have a Good Dream">
+			<h2>Have a Good Dream</h2>
+			<p>A comfortable way to take care your children </p>
+		</div>
+	</section>
+
+	<section id="control">
+		<div class="center">
+			<div id="login_div" class="main-div">
+				<h3>Login to control your cradle</h3>
+				<button onclick="login()">Login with Facebook</button>
 			</div>
-		</section>
 
-		<section id="control">
-			<div class="center">
-				<div id="login_div" class="main-div">
-					<h3>Login to control your cradle</h3>
-					<button onclick="login()">Login with Facebook</button>
-				</div>
-
-				<div id="user_div" class="loggedin-div">
-					<input type="text" id="cradle_id" placeholder="Cradle's ID">
-					<h3 id="status">ON</h3>
-					<div id="switch">
-						<input type="checkbox" id="check" onclick="OnOff()" checked/>
-						<label for="check" id="checkLabel"></label>
-					</div>
+			<div id="user_div" class="loggedin-div">
+				<input type="text" id="cradle_id" placeholder="Cradle's ID">
+				<switch-control>
+					<label>
+						<input type="checkbox" name="switch" onclick="OnOff()" checked>
+						<state-indicator data-on="On" data-off="Off">
+							<handle-button></handle-button>
+						</state-indicator>
+					</label>
+				</switch-control>
 
 
-					<button onclick="logout()">Logout</button>
-				</div>
+				<button onclick="logout()">Logout</button>
 			</div>
-		</section>
+		</div>
+	</section>
 
 
-		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-		<script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script>
 			// Initialize Firebase
 			var config = {
 				apiKey: "AIzaSyA8sxYoTtM-bxvpGXy1_TAh8nLlqWaE6zo",
@@ -54,4 +57,4 @@
 		<script src="index.js"></script>
 
 	</body>
-</html>
+	</html>

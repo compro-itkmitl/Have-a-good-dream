@@ -136,54 +136,81 @@ input, button {
 }
 
 /* On/Off */
-#switch {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+switch-control {
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 1.5em;
+  border-radius: 0.75em;
+  background-clip: padding-box;
+  font-family: sans-serif;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-#switch #check {
+switch-control input {
   display: none;
 }
-#switch #checkLabel {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  height: 100px;
-  width: 42px;
-  background-color: #EDEDED;
-  border: solid 2px #DDD;
-  border-radius: 20px;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
+switch-control state-indicator {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background-color: #E03A3C;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-#switch #checkLabel:after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
+switch-control state-indicator::before,
+switch-control state-indicator::after {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  -webkit-transform: translateY(26px);
-          transform: translateY(26px);
-  height: 66px;
-  width: 34px;
-  background-color: #FFF;
-  border: solid 1px #DDD;
-  border-radius: 17px;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out;
-  transition: transform 0.25s ease-in-out, background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.25s ease-in-out;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 85%;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  padding: 0 7%;
 }
-#switch #check:checked + #checkLabel:after {
-  /*top: auto; bottom: 2px;*/
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #33EE33;
-  border: solid 1px #44FF44;
-  box-shadow: 0px 2px 0px rgba(34, 170, 34, 0.5);
+switch-control state-indicator::before {
+  content: attr(data-on);
+  left: 0;
+}
+switch-control state-indicator::after {
+  content: attr(data-off);
+  right: 0;
+}
+switch-control state-indicator handle-button {
+  position: absolute;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  left: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: .75em;
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1IDUiPjxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjEiIGZpbGw9IiNlNmU2ZTYiLz48cmVjdCB5PSIyIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSIjZTZlNmU2Ii8+PHJlY3QgeT0iNCIgd2lkdGg9IjUiIGhlaWdodD0iMSIgZmlsbD0iI2U2ZTZlNiIvPjwvc3ZnPg==), linear-gradient(to bottom, #ffffff 0%, #ededed 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, 0 100%;
+  background-size: 25% 25%, 100% 100%;
+  text-align: center;
+  color: #ddd;
+  box-shadow: 0 0.075em 0.25em 0.075em rgba(0, 0, 0, 0.15);
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+switch-control input:checked + state-indicator {
+  left: 0;
+  background-color: #5DC25A;
+}
+switch-control input:checked + state-indicator handle-button {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 
