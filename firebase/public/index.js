@@ -39,18 +39,18 @@ function logout(){
   firebase.auth().signOut();
 }
 
-function OnOff() {
+document.addEventListener('DOMContentLoaded', function () {
   var checkbox = document.querySelector('input[type="checkbox"]');
 
-  checkbox.addEventListener('change', function () {
-    if(checkbox.checked) {
+  checkbox.addEventListener('change', function OnOff() {
+    if (checkbox.checked) {
       firebase.database().ref('pc/data').set(0);
       firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    }
-
-    else {
+      console.log('Checked');
+    } else {
       firebase.database().ref('pc/data').set(1);
       firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
+      console.log('Not checked');
     }
-  }
-}
+  });
+});
