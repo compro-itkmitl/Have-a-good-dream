@@ -25,10 +25,11 @@
 				<div id="user_div" class="loggedin-div">
 					<input type="text" id="cradle_id" placeholder="Cradle's ID">
 					<h3 id="status">ON</h3>
-					<label class="switch">
-						<input onclick="OnOff()" type="checkbox" checked>
-						<span class="slider round"></span>
-					</label>
+					<div id="switch">
+						<input type="checkbox" id="check" onclick="OnOff()" checked/>
+						<label for="check" id="checkLabel"></label>
+					</div>
+
 
 					<button onclick="logout()">Logout</button>
 				</div>

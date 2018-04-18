@@ -136,63 +136,56 @@ input, button {
 }
 
 /* On/Off */
-
-.switch {
+#switch {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#switch #check {
+  display: none;
+}
+#switch #checkLabel {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin-bottom: 2em;
-}
-
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  width: 42px;
+  background-color: #EDEDED;
+  border: solid 2px #DDD;
+  border-radius: 20px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
 }
-
-.slider:before {
-  position: absolute;
+#switch #checkLabel:after {
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  -webkit-transform: translateY(26px);
+          transform: translateY(26px);
+  height: 66px;
+  width: 34px;
+  background-color: #FFF;
+  border: solid 1px #DDD;
+  border-radius: 17px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out;
+  transition: transform 0.25s ease-in-out, background-color 0.2s ease-out, border 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.25s ease-in-out;
+}
+#switch #check:checked + #checkLabel:after {
+  /*top: auto; bottom: 2px;*/
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background-color: #33EE33;
+  border: solid 1px #44FF44;
+  box-shadow: 0px 2px 0px rgba(34, 170, 34, 0.5);
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
 
 #logo {
   height: 200;
