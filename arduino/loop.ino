@@ -1,6 +1,8 @@
 void loop() {
   io_status = digitalRead(IO_SWITCH);
-  firebase_status = digitalRead(RX);  //  get firebase status from nodemcu
+
+  //  get firebase status from nodemcu
+  firebase_status = digitalRead(RX);
 
   //  I/O Switch on
   if (io_status == HIGH) {

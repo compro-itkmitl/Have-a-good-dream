@@ -14,6 +14,6 @@ Metro mic_Metro = Metro(1000);
 #define TX D0
 
 String message = "The baby needs you", id_get;
-int io_status, count_voice = 0;
+int io_status, count_voice = 0, io_switch;
 
 void Line_Notify(String message) ;
