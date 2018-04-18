@@ -39,16 +39,17 @@ function logout(){
   firebase.auth().signOut();
 }
 
+var status = true;
 function OnOff() {
-  if(document.getElementById("status").innerHTML=="OFF") {
+  if(!status) {
     firebase.database().ref('pc/data').set(1);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    document.getElementById("status").innerHTML="ON";
+    status = !status;
   }
 
-  else if(document.getElementById("status").innerHTML=="ON") {
+  else {
     firebase.database().ref('pc/data').set(0);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    document.getElementById("status").innerHTML="OFF";
+    status = !status;
   }
 }
