@@ -149,7 +149,6 @@ switch-control {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding-bottom: 15px;
 }
 switch-control input {
   display: none;
@@ -214,6 +213,9 @@ switch-control input:checked + state-indicator handle-button {
           transform: translateX(-100%);
 }
 
+.pd {
+  padding-bottom: 15px;
+}
 
 #logo {
   height: 200;

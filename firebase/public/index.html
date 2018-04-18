@@ -24,14 +24,17 @@
 
 			<div id="user_div" class="loggedin-div">
 				<input type="text" id="cradle_id" placeholder="Cradle's ID">
-				<switch-control>
-					<label>
-						<input onclick="OnOff()" type="checkbox" name="switch" checked>
-						<state-indicator data-on="On" data-off="Off">
-							<handle-button></handle-button>
-						</state-indicator>
-					</label>
-				</switch-control>
+
+				<div class="pd">
+					<switch-control>
+						<label>
+							<input onclick="OnOff()" type="checkbox" name="switch" checked>
+							<state-indicator data-on="On" data-off="Off">
+								<handle-button></handle-button>
+							</state-indicator>
+						</label>
+					</switch-control>
+				</div>
 
 
 				<button onclick="logout()">Logout</button>
