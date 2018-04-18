@@ -44,12 +44,12 @@ function OnOff() {
   if(status) {
     firebase.database().ref('pc/data').set(0);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = false;
+    status = !status;
   }
 
-  else {
+  else if(!status) {
     firebase.database().ref('pc/data').set(1);
     firebase.database().ref('pc/cradle_id').set(document.getElementById("cradle_id").value);
-    status = true;
+    status = !status;
   }
 }
