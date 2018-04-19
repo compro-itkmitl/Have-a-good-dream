@@ -13,6 +13,8 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   Firebase.begin (FIREBASE_HOST, FIREBASE_KEY);
+  Firebase.setInt("pc/io", 1);
+  Firebase.setInt("pc/mic", 1);
 
   pinMode(MIC, INPUT);
   pinMode(RX, INPUT);

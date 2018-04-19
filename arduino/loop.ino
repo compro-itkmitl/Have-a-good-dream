@@ -1,6 +1,5 @@
 void loop() {
   io_status = digitalRead(IO_SWITCH);
-
   //  get firebase status from nodemcu
   firebase_status = digitalRead(RX);
 
