@@ -6,7 +6,10 @@ void loop() {
   //  I/O Switch on
   if (io_status == HIGH) {
     //  get value from potentiometer for cradle speed
-    c_speed = 2 * (((analogRead(POTEN) * 391)/100000) + 1);
+    c_speed = 2 * ((analogRead(POTEN) * 0.00391) + 1);
+
+    Serial.println(c_speed);
+    Serial.println(analogRead(POTEN));
 
     //  firebase Switch on
     if (firebase_status == HIGH) {
