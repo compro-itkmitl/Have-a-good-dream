@@ -1,12 +1,13 @@
 void loop() {
   io_status = digitalRead(IO_SWITCH);
+  digitalWrite(TX, io_status);  //  send I/O Status to nodemcu
   //  get firebase status from nodemcu
   firebase_status = digitalRead(RX);
 
   //  I/O Switch on
   if (io_status == HIGH) {
     //  get value from potentiometer for cradle speed
-    c_speed = 2 * ((analogRead(POTEN) * 0.00391) + 1);
+    c_speed = 5 * ((analogRead(POTEN) * 0.00391) + 1);
 
     Serial.println(c_speed);
     Serial.println(analogRead(POTEN));
