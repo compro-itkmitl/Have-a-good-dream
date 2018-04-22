@@ -5,6 +5,9 @@ void loop() {
 
   //  I/O Switch on
   if (io_status == HIGH) {
+    //  get value from potentiometer for cradle speed
+    c_speed = 2 * (((analogRead(POTEN) * 391)/100000) + 1);
+
     //  firebase Switch on
     if (firebase_status == HIGH) {
       //  Servo
@@ -12,13 +15,13 @@ void loop() {
         pos_2 = 180 - pos_1;
         SERVO_1.write(pos_1);
         SERVO_2.write(pos_2);
-        delay(5);
+        delay(c_speed);
       }
       for (pos_2 = 45; pos_2 <= 135; pos_2 += 1) {
         pos_1 = 180 - pos_2;
         SERVO_1.write(pos_1);
         SERVO_2.write(pos_2);
-        delay(5);
+        delay(c_speed);
       }
     }
 
