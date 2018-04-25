@@ -1,5 +1,6 @@
 void loop() {
   io_status = digitalRead(IO_SWITCH);
+  Serial.println(io_status);
   digitalWrite(TX, io_status);  //  send I/O Status to nodemcu
   //  get firebase status from nodemcu
   firebase_status = digitalRead(RX);
