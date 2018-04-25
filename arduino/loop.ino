@@ -32,15 +32,13 @@ void loop() {
 
     //  firebase Switch off
     else if (firebase_status == LOW) {
-      SERVO_1.write(90);
-      SERVO_2.write(90);
+      go_to_zero();
     }
   }
 
   //  I/O Switch off
   else if (io_status == LOW) {
-    SERVO_1.write(90);
-    SERVO_2.write(90);
+    go_to_zero();
   }
 }
 
