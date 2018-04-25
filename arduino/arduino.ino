@@ -6,8 +6,8 @@ Servo SERVO_1, SERVO_2;
 #define RX 0 //input
 #define TX 1 //output
 
-int pos_1 = 0, pos_2 = 0, c_speed;
+int pos_1 = 0, pos_2 = 0, pos_status=0, c_speed;
 int io_status, firebase_status=1;
 
-void go_to_zero();
-void start();
+void go_to_stop();
+void go_to_start();
