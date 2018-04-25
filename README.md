@@ -28,7 +28,7 @@
  3. Login with Facebook
  4. Fill your cradle's ID
  5. Click the switch to control your cradle
- 6. If the baby cries for more than 5 minutes, the cradle will send a message to your Line app
+ 6. If the baby cries for more than 3 minutes, the cradle will send a message to your Line app
 
 ## 👩‍💻 Author 👨‍💻
 
@@ -37,8 +37,8 @@
  - 60070082 : Raksina Kanokwut
 
 ## 👨‍🏫 Supervisors
- -   Asst.Kitsuchart Pasupa
- -   Asst.Panwit Tuwanut
+ -   Asst.Prof.Dr.Kitsuchart Pasupa
+ -   Asst.Prof.Dr.Panwit Tuwanut
 
 ---
 06016315 COMPUTER PROGRAMMING
