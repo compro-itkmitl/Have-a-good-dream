@@ -10,3 +10,4 @@ int pos_1 = 0, pos_2 = 0, c_speed;
 int io_status, firebase_status=1;
 
 void go_to_zero();
+void start();
